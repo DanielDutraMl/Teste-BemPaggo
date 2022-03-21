@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Formulário de Compra</title>
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="style.css">
+		<script src="index.js"></script>
+
+	</head>
+	<body method="get" action="checkout.html" class="body">
+		<header >
+			<div class="header">
+				<p class="inicio">
+					Formulário para compra de <i class="bold">Pacote de adesivos</i> 
+				</p>
+			</div>
+		</header>
+		<main>
+			<div class="principal">
+				<h2 class="titulos">Quais adesivos:</h2>
+					<div class="opcoes">
+						<input class="cursor" type="checkbox" id="react" name="react">
+						<label for="react">React</label>
+					</div>	
+					<div class="opcoes">
+						<input class="cursor" type="checkbox" id="vue" name="vue">
+						<label for="vue">Vue</label>
+					</div>
+					<div class="opcoes">
+						<input class="cursor" type="checkbox" id="angular" name="angular">
+						<label for="angular">Angular</label>
+					</div>
+				<h2 class="titulos">Quantos adesivos de cada?</h2>
+					<div class="grupo-botao">
+					<div class="botao">
+						<i class="texto-botao-diminuicao" type="button" onclick="diminuirValor()" >-</i>
+					</div>
+					<input class="texto-numero" type="valor" id="valor" value="0">
+					<div class="botao">
+						<i class="texto-botao-soma" type="button" onclick="aumentarValor()" >+</i>
+					</div>
+				</div>
+				<h2 class="titulos">Observações</h2>
+					<div class="area-texto">
+					<label for="observacoes"></label>
+					<textarea class="caixa-texto" placeholder="Alguma dúvida? Recado?" name="observacoes" id="observacoes" rows="4"></textarea>
+					</div>
+			</div>
+		</main>
+		<footer class="rodape">
+			<button class="enviar"><a class="enviar-texto" id="enviar" href="checkout.html">Enviar</a></button>
+		</footer>
+	</body>
+
+
+</html>
