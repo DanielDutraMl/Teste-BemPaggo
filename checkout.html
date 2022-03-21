@@ -20,36 +20,42 @@
 			<div class="principal">
 				<h2 class="titulos">Confirme seu pedido:</h2>
 					<div class="opcoes">
-						<input class="cursor" type="checkbox" id="react" name="react">
 						<label for="react">React</label>
+						<label onsubmit="react()" style="display:none">0 </label>
 					</div>	
 					<div class="opcoes">
-						<input class="cursor" type="checkbox" id="react" name="react">
-						<label for="react">React</label>
+						<label for="vue">Vue</label>
 					</div>	
 					<div class="opcoes">
-						<input class="cursor" type="checkbox" id="angular" name="angular">
 						<label for="angular">Angular</label>
 					</div>
-				<h2 class="titulos">Quantos adesivos de cada?</h2>
+				<h2 class="titulos">Qual a forma de pagamento?</h2>
 					<div class="grupo-botao">
-					<div class="botao">
-						<i class="texto-botao-diminuicao" type="button" onclick="diminuirValor()" >-</i>
+						<div class="opcoes">
+							<input class="cursor" type="checkbox" id="cartao" name="check" onclick="myFunction(), onlyOne(this)">
+							<label for="cartao">Cartão de Crédito</label>
+
+							<input class="cursor" type="checkbox" id="pix" name="check" onclick="myFunction(), onlyOne(this)">
+							<label for="pix">Pix</label>
+
+						</div>
 					</div>
-					<input class="texto-numero" type="valor" id="valor" value="0">
-					<div class="botao">
-						<i class="texto-botao-soma" type="button" onclick="aumentarValor()" >+</i>
-					</div>
-				</div>
-				<h2 class="titulos">Observações</h2>
+				<h2 class="titulos">Dados</h2>
 					<div class="area-texto">
-					<label for="observacoes"></label>
-					<textarea class="caixa-texto" placeholder="Alguma dúvida? Recado?" name="observacoes" id="observacoes" rows="4"></textarea>
+						<div class="form-group">
+						  <label for="nome" style="display:none" id="nomePessoa">Nome</label>
+						  <input class="textodados" style="display:none" type="text" name="nome" id="nome" placeholder="Seu nome aqui">
+						</div>
+						<div class="form-group">
+							<label style="display:none" id ="numeroCart">Número do cartão</label>
+							<input style="display:none" class="textodados" type="text" name="nomeCartao" id="nomeCartao" placeholder="Seu Cartão aqui">
+						  </div>
 					</div>
 			</div>
 		</main>
 		<footer class="rodape">
-			<button class="enviar"><a class="enviar-texto" href="checkout.html">Enviar</a></button>
+			<button class="enviar"><a class="enviar-texto" href="checkout.html">Confirmar</a></button>
+			<button class="voltar"><a class="enviar-texto" href="index.html">Voltar</a></button>
 		</footer>
 	</body>
 </html>

@@ -125,9 +125,34 @@ input::-webkit-inner-spin-button {
 
 }
 
+.voltar{
+	position:relative;
+	left: -20%;
+	top:30%;
+	background-color: rgb(55, 42, 112);
+	border-radius: 10%;
+	padding: 2% 5%;
+
+}
+
+
+
 .enviar-texto{
 	color: white;
 	padding: 2% 5%;
 	cursor: pointer;
 	text-decoration: none;
+}
+
+
+.textodados{
+	display:inline-block;
+	height: 25px;
+	width: 300px;
+	margin: 5px 5px 15px 0;
+}
+
+.form-group{
+	display:inline-block;
+	text-justify:distribute;
 }
